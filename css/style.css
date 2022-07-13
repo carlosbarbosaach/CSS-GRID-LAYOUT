@@ -1,0 +1,267 @@
+body,
+p,
+h1,
+h2,
+ul,
+li,
+blockquote {
+    padding: 0;
+    margin: auto;
+}
+
+body {
+    font-family: "Work Sans", Georgia, serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* GRID GERAL */
+
+.estrutura {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+    grid-template-areas:
+        "header header header"
+        "sidenav content anuncios"
+        "footer footer footer"
+    ;
+}
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+    background-image: linear-gradient(to right top, #ebb335, #efb93b, #f3c040, #f7c646, #fbcd4c);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.logo {
+    max-width: 45px;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-image: linear-gradient(to right top, #ebb335, #efb93b, #f3c040, #f7c646, #fbcd4c);
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.header nav a:hover {
+    background: #202020;
+}
+
+.header li+li {
+    margin-left: 30px;
+}
+
+/* SIDENAV  */
+
+
+.sidenav {
+    grid-area: sidenav;
+    background: #fafbfc;
+    padding: 20px;
+}
+
+.sidenav li a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgb(44, 44, 44, 0.15);
+    transition: .1s ease-out;
+}
+
+.sidenav li a:hover {
+    background-image: linear-gradient(to right top, #ebb335, #efb93b, #f3c040, #f7c646, #fbcd4c);
+}
+
+/* CONTENT  */
+
+.content {
+    grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.col-wide {
+    grid-column: 1 / -1;
+}
+
+.imagem-1 {
+    grid-row: span 2;
+    align-self: end;
+}
+
+.item-2 {
+    align-self: end;
+}
+
+/* ESTILOS CONTENT  */
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 25px;
+    text-align: left;
+    color: #364044;
+}
+
+.info-dog p+p {
+    margin-top: 30px;
+}
+
+
+/* TITLE  */
+
+.title {
+    color: #fbcd4c;
+}
+
+.title h1 {
+    font-size: 2.75em;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.title span {
+    font-size: 0.975em;
+}
+
+/* CARACTERISTICAS  */
+
+.features-small {
+    display: flex;
+    align-items: flex-start;
+}
+
+.features-small>div {
+    width: 80px;
+    text-align: center;
+    background-image: linear-gradient(to right top, #ebb335, #efb93b, #f3c040, #f7c646, #fbcd4c);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgb(44, 44, 44, 0.15);
+    position: relative;
+}
+
+.features-small>div:first-child {
+    margin-right: 30px;
+}
+
+.features-small span {
+    display: block;
+    color: #fcde8d;
+}
+
+.height-dog {
+    font-size: 2.5em;
+    line-height: 1;
+    margin: 10px auto;
+    font-style: italic;
+}
+
+.cm-dog {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
+}
+
+.destaque {
+    font-size: 0.875em;
+    color: #efb93b;
+    max-width: 23em;
+}
+
+.citacao,
+.atributos {
+    align-self: start;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgb(44, 44, 44, 0.15);
+    background: linear-gradient(135deg, #ebb335, #fcde8d);
+}
+
+.citacao p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.atributos li {
+    color: #fff;
+    font-family: "Courier", monospace;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.atributos li+li {
+    border-top: 2px solid #fcde8d;
+}
+
+
+/* ANUNCIOS  */
+
+.anuncios {
+    grid-area: anuncios;
+    background: #fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    grid-gap: 30px;
+}
+
+/* FOOTER  */
+
+.footer {
+    grid-area: footer;
+    background-image: linear-gradient(to right top, #ebb335, #efb93b, #f3c040, #f7c646, #fbcd4c);
+}
+
+.footer p {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 30px;
+}
