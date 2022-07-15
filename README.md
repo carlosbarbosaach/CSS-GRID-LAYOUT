@@ -1,4 +1,10 @@
 # CSS-GRID-LAYOUT
 
+### HTML ✅
+### CSS ✅
+### RESPONSIVE ✅
+
+
 ## Home BlogDOGs 🐶
-![WhatsApp Image 2022-07-13 at 19 11 14](https://user-images.githubusercontent.com/71820886/178845893-530a47d0-5fed-41d7-9e97-edeef3a56dec.jpeg)
+![BlogDOGS](https://user-images.githubusercontent.com/71820886/179222264-0f10e1b8-d901-4100-b962-0b2ab82cf300.jpeg)
+
